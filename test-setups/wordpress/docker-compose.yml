@@ -1,0 +1,58 @@
+
+version: '3.1'
+
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wpuser
+      MARIADB_PASSWORD: wppass
+      MARIADB_ROOT_PASSWORD: rootpass
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:php8.2-apache
+    depends_on:
+      - db
+    restart: unless-stopped
+    ports:
+      - "8480:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wordpress
+
+    volumes:
+      - wordpress_data:/var/www/html
+
+  # (optional) phpMyAdmin at http://localhost:8081
+  phpmyadmin:
+    image: phpmyadmin:latest
+    depends_on:
+      - db
+    restart: unless-stopped
+    ports:
+      - "8481:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: rootpass
+
+volumes:
+  wordpress_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "C:/leif-dev/wordpress/wordpress_data"
+  db_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "C:/leif-dev/wordpress/db_data"
+
