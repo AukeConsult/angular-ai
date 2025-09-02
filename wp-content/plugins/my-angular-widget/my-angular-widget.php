@@ -6,6 +6,11 @@
  */
 
 add_shortcode('ng_widget', function ($atts = []) {
+
+  static $printed = false;
+  if ($printed) return '';   // prevent a second instance
+  $printed = true;
+
   $atts  = shortcode_atts(['count' => '3'], $atts);
   $count = esc_attr($atts['count']);
 
@@ -47,3 +52,4 @@ function ngw_find_one(string $dir, string $pattern) {
   usort($m, fn($a,$b) => filemtime($b) <=> filemtime($a));
   return $m[0];
 }
+
