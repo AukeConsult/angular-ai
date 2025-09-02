@@ -1,0 +1,9 @@
+# Default ignored files
+# Editor-based HTTP Client requests
+/.idea/
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+**/secrets.ts
+

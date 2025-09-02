@@ -1,148 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3523f5af-ed0a-45f3-b54a-2615dca98e61" name="Changes" comment="" />
+    <list default="true" id="21bb33c1-2a5c-4aac-8d11-927bc636c625" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/library/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/library/models/app-model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/library/utils/helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/local.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/src/services/app-storage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/storage.rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/tests/firebase.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/tests/model-storage.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueboot-server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-ng-widget/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-ng-widget/angular.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/wp-ng-widget" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="326yFJfkIX2uTS0FGupfedAtkbF" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="32AB1AVr56tf80SRrd8RzIBtgPy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/365034/OneDrive - Aker Solutions/Documents/pers/wordpress-angular",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/projects/ai-assistant/angular-ai-2/blueboot-server",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\365034\\OneDrive - Aker Solutions\\Documents\\pers\\iarbeid\\angular-ai\\wp-ng-widget\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3523f5af-ed0a-45f3-b54a-2615dca98e61" name="Changes" comment="" />
-      <created>1756755212120</created>
+      <changelist id="21bb33c1-2a5c-4aac-8d11-927bc636c625" name="Changes" comment="" />
+      <created>1756853280300</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1756755212120</updated>
-      <workItem from="1756755213128" duration="3113000" />
-      <workItem from="1756795305767" duration="663000" />
-      <workItem from="1756797088126" duration="4344000" />
+      <updated>1756853280300</updated>
+      <workItem from="1756853282587" duration="195000" />
     </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1756755388590</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1756755388591</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756759690247</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1756759690247</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756759773115</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1756759773115</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756759924615</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1756759924615</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756759996243</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1756759996243</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756761450945</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1756761450945</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756762535763</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1756762535763</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756762576333</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1756762576333</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix key in environment">
-      <option name="closed" value="true" />
-      <created>1756801483210</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1756801483210</updated>
-    </task>
-    <task id="LOCAL-00010" summary="push project">
-      <option name="closed" value="true" />
-      <created>1756802883239</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1756802883239</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="fix key in environment" />
-    <MESSAGE value="push project" />
-    <option name="LAST_COMMIT_MESSAGE" value="push project" />
   </component>
 </project>
