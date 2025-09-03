@@ -1,3 +1,4 @@
+**/.idea
 **/lib
 **/*.secrets.*
 
@@ -70,4 +71,3 @@ node_modules/
 
 # dataconnect generated files
 /functions/src/index.ts
-/.idea/
