@@ -1,0 +1,1 @@
+xcopy src\index.local.ts src\index.ts /y >NUL

@@ -1,0 +1,1 @@
+xcopy src\index.remote.ts src\index.ts /y >NUL

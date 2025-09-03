@@ -1,5 +1,5 @@
 import {firestore} from "firebase-admin";
-import {openAiApiKey} from "../secrets"
+import {openAiApiKey} from "../blueboot.secrets"
 import {AppSetting, AppSettingWidget} from "../library";
 
 export class AppStorage {
@@ -9,7 +9,7 @@ export class AppStorage {
         return {
             appId: appId,
             displayName: "iarbeid search",
-            modelSetting: {
+            chatGptSetting: {
                 modelKey: openAiApiKey,
                 model: "gpt-4.1-mini",
                 instructions: "Du er en RAG-assistent. Du MÅ alltid bruke file_search før du svarer. " +
@@ -33,7 +33,7 @@ export class AppStorage {
             return {
                 appId: appId,
                 displayName: "iarbeid search",
-                modelSetting: {
+                chatGptSetting: {
                     modelKey: openAiApiKey,
                     model: "gpt-4.1-mini",
                     instructions: "Du er en RAG-assistent. Du MÅ alltid bruke file_search før du svarer. " +

@@ -1,0 +1,43 @@
+{
+  "name": "blueboot-service",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "description": "Backbone service for blueboot",
+  "scripts": {
+    "build": "local.cmd & tsc",
+    "build:prod": "remote.cmd & tsc",
+    "debug": "npm run build & node --inspect-brk -r ts-node/register src/index.ts",
+    "serve-local": "npm run build & node lib/index.js",
+    "build:watch": "tsc --watch",
+    "serve-emulate": "npm run build:prod & firebase emulators:start --only functions",
+    "shell": "npm run build:prod & firebase functions:shell",
+    "deploy": "npm run build:prod & firebase deploy --only functions",
+    "logs": "firebase functions:log",
+
+    "test": "jest"
+  },
+  "dependencies": {
+    "cross-env": "^10.0.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "firebase-functions-test": "^3.1.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
+}

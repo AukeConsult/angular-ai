@@ -3,7 +3,7 @@ export interface StorageSetting {
     datasetCatalogue: string
 }
 
-export interface ModelSetting {
+export interface ChatGptSetting {
     modelKey: string
     model: string
     maxTokens?: number
@@ -15,7 +15,7 @@ export interface ModelSetting {
         name: string
         type: string
     }[]
-
+    models: ['gpt-4.1-mini', 'gpt-4o-mini', 'o4-mini']
 }
 export interface AppSetting {
     appId: string;
@@ -28,7 +28,7 @@ export interface AppSetting {
     }
     displayName: string;
     secret?: string;
-    modelSetting: ModelSetting,
+    chatGptSetting: ChatGptSetting,
     storageSetting: StorageSetting
 }
 
@@ -36,7 +36,7 @@ export interface AppSettingWidget {
     appId: string;
     displayName: string;
     secret?: string;
-    modelSetting: ModelSetting
+    chatGptSetting: ChatGptSetting
 }
 
 export interface AppFile {
@@ -50,5 +50,5 @@ export interface AppFile {
     datasetCatalogue: string;
     vectorStoreId: string;
     source: string;
-    sourceType: "auto" | "uploaded" | "scan"
+    sourceType: "fixed" | "uploaded" | "scanned"
 }

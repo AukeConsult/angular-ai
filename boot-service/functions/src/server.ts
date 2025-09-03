@@ -1,5 +1,5 @@
 import cors, { CorsOptions } from "cors";
-import { AppStorage } from ".";
+import { AppStorage } from "./services/app-storage";
 import { app as firebaseAdmin } from "firebase-admin";
 import App = firebaseAdmin.App;
 import express, { Application } from "express";
@@ -19,8 +19,8 @@ export class Server {
                 appId = "iarbeid"
             }
             this.modelStorage.getWidgetSettings(appId)
-                .then(r => res.json(r))
-                .catch(err => {
+                .then((r: any) => res.json(r))
+                .catch((err: { message: any; }) => {
                     console.error(err)
                     res.status(204).json({error: "ERR-DESCRIPTOR", err: err.message})
                 });
@@ -32,8 +32,8 @@ export class Server {
                 appId = "iarbeid"
             }
             this.modelStorage.getAppSettings(appId)
-                .then(r => res.json(r))
-                .catch(err => {
+                .then((r: any) => res.json(r))
+                .catch((err: { message: any; }) => {
                     console.error(err)
                     res.status(204).json({error: "ERR-DESCRIPTOR", err: err.message})
                 });
@@ -47,8 +47,8 @@ export class Server {
             if (appId) {
                 const appSetting = req.body as AppSetting;
                 this.modelStorage.storeAppSettings(appId, appSetting)
-                    .then(r => res.json(r))
-                    .catch(err => {
+                    .then((r: any) => res.json(r))
+                    .catch((err: { message: any; }) => {
                         console.error(err)
                         res.status(204).json({error: "ERR-APPSETTING", err: err.message})
                     });
@@ -72,7 +72,13 @@ export class Server {
         app.get("/", (req, res) => {
             res.json({ message: "hello from blueboot" });
         });
-
+        app.get("/api", (req, res) => {
+            res.json([
+                { url: "/get-app-settings", verb: "GET", header: "'x-appid': '<appid>'", description: "Get the App Settings, return a new if not exising" },
+                { url: "/update-app-settings", verb: "POST", header: "'x-appid': '<appid>'", body: "'add json interface from /get-app-settings'", description: "store and update settings",},
+                { url: "//get-widget-settings", verb: "GET", header: "'x-appid': '<appid>'", description: "Get the widget Settings" },
+            ]);
+        });
         app.all("/*", (req, res, next) => {
             next();
         });
