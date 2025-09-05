@@ -119,6 +119,8 @@
 .history {
   padding: 16px;
   overflow-y: auto;
+  max-height: 70%;
+
 }
 
 .msg {
@@ -227,3 +229,76 @@ kbd {
   border-radius: 6px;
   font-size: 11px;
 }
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.suggestion-btn {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 4px 10px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+.suggestion-btn:hover {
+  background: #f3f4f6;
+}
+
+/* Rotating suggestions above the input */
+.suggestion-rotator {
+  padding:10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: #81838a;
+  display: flex;
+  justify-content: center;   /* ⬅️ centers it */
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s ease;
+}
+
+.suggestion-rotator:hover {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+.suggestion-rotator .hint-label {
+  font-size: 12px;
+  opacity: .6;
+
+}
+
+.suggestion-rotator .suggestion-text {
+  font-weight: 500;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.suggestion-rotator .suggestion-text.swap {
+  opacity: 0;
+  transform: translateY(4px);
+}
+/* Helper question above input */
+.helper-question {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.helper-question .highlight {
+  color: #2563eb;
+}
+
+.helper-question, .suggestion-rotator {
+  transition: opacity .2s ease, transform .2s ease;
+}
+.ng-leave, .ng-leave-active { opacity: 0; transform: translateY(-4px); }
